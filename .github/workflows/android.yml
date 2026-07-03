@@ -54,7 +54,6 @@ jobs:
         uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: ${{ steps.gradle_ver.outputs.version }}
-          build-root-directory: ${{ matrix.project }}/android
           cache-read-only: false
 
       - name: Write local.properties
